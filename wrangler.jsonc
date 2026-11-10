@@ -1,0 +1,11 @@
+{
+  // Static site: `npm run build` exports the website to ./out,
+  // and `npx wrangler deploy` uploads that folder as Workers static assets (no server code).
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "karaoke-visip",
+  "compatibility_date": "2026-11-09",
+  "assets": {
+    "directory": "./out",
+    "not_found_handling": "404-page"
+  }
+}
