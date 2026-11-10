@@ -1,0 +1,1 @@
+document.querySelectorAll(".ktab").forEach(b=>b.addEventListener("click",()=>{document.querySelectorAll(".ktab").forEach(x=>{x.classList.toggle("active",x===b);x.setAttribute("aria-selected",x===b)});document.querySelectorAll("[data-kp]").forEach(g=>g.hidden=g.dataset.kp!==b.dataset.k)}));
