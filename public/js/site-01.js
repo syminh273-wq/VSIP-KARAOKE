@@ -62,6 +62,7 @@ const KIND={standard:"Thường",vip:"VIP",party:"Phòng tiệc"};
 const KEY="hamruou-vsip-demo-v7";
 let db=null;try{db=JSON.parse(localStorage.getItem(KEY))}catch(e){}
 if(!db||!Array.isArray(db.dishes)||!Array.isArray(db.rooms))db=JSON.parse(JSON.stringify(SEED));
+window.__vsipDishes=db.dishes; // read by the i18n script (site-08) to translate dish names
 const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(db))}catch(e){setTimeout(()=>toast("Ảnh quá lớn để lưu lâu dài trong trình duyệt; vẫn hiển thị đến khi tải lại trang."),50)}};
 const nextId=a=>Math.max(0,...a.map(x=>x.id))+1;
 

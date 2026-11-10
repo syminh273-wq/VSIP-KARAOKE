@@ -179,6 +179,149 @@ const PAT={en:[
  [/^(.+) · giá theo kích cỡ$/,(m,a)=>`${a} · 按规格计价`],
  [/^(.+) · theo thời giá$/,(m,a)=>`${a} · 时价`],
 ]};
+
+/* ===== i18n additions: rooms & halls, hero, address, dish names (generated), cooking options, labels ===== */
+Object.assign(EN,{
+"Công ty TNHH":"VSIP Restaurant","Nhà hàng Karaoke VSIP":"& Karaoke Co., Ltd.",
+"Nhà Hàng Hầm Rượu - Karaoke VSIP":"Wine Cellar Restaurant – VSIP Karaoke",
+"4/8F Bùi Hữu Nghĩa, Khu Phố Bình Đức 2, Phường Bình Hoà, TP HCM, Bình Dương, Hồ Chí Minh":"4/8F Bui Huu Nghia St., Binh Duc 2 Quarter, Binh Hoa Ward, Ho Chi Minh City",
+"PHÒNG VIP":"VIP ROOMS","Phòng ăn riêng":"Private dining rooms","Bàn tròn":"Round tables","Bàn dài":"Long tables",
+"5 phòng riêng · bàn tròn mâm xoay":"5 private rooms · round tables with lazy Susan",
+"3 phòng · Phòng bàn dài – hợp tiếp khách, liên hoan công ty":"3 rooms · Long-table rooms – ideal for business dinners and company parties",
+"Chuyên tiếp khách Trung Quốc":"Ideal for hosting Chinese guests","Thưởng vang, tiếp đối tác":"Wine tasting, meeting partners",
+"Chuyên tiếp khách VIP":"Ideal for VIP guests","Tiệc gia đình ấm cúng":"Cosy family dinners","Sinh nhật, kỷ niệm":"Birthdays, anniversaries",
+"Tiếp đối tác doanh nghiệp":"Business partner dinners","Liên hoan, họp mặt công ty":"Company parties & gatherings","Tiếp khách quan trọng":"Important guests",
+"Nhận tiệc":"Events & banquets","2 sảnh lớn · sinh nhật, cưới hỏi, tất niên":"2 large halls · birthdays, weddings, year-end parties",
+"SẢNH TIỆC":"BANQUET HALL","THỰC ĐƠN":"MENU",
+"Sảnh có màn hình LED lớn – hợp tiệc sinh nhật, hội nghị, liên hoan công ty":"Hall with a large LED screen – ideal for birthdays, conferences and company parties",
+"Sảnh dài sang trọng, đèn chùm pha lê – hợp tiệc cưới hỏi, tất niên, tiệc đông người":"Elegant long hall with crystal chandeliers – ideal for weddings, year-end and large parties",
+"Ảnh không gian bàn dài":"Long-table room photos","Trang trước":"Previous page","Trang sau":"Next page",
+"Sườn cừu nướng đá":"Stone-grilled Lamb Chops","Gan ngỗng Pháp áp chảo":"Pan-seared French Foie Gras",
+"Chân gà Đông Tảo hầm thảo mộc":"Herbal-braised Dong Tao Chicken Feet","Sò điệp Nhật đút lò phô mai":"Baked Japanese Scallops with Cheese",
+"Cá tra dầu nhúng mẻ – Lườn bụng":"Giant Catfish Sour Hot Pot – Belly","Cá tra dầu nhúng mẻ – Phần thịt":"Giant Catfish Sour Hot Pot – Fillet",
+"Tôm tích cồ":"Large Mantis Shrimp","Cua thịt · Ghẹ xanh":"Meat Crab · Blue Swimming Crab","Ốc hương":"Spotted Babylon Snail","Bào ngư Hàn Quốc":"Korean Abalone",
+"Hải sản tươi sống & Món hàu":"Live seafood & Oysters","Bảng giá hải sản – Tôm · Cua · Ghẹ":"Seafood prices – Prawns · Crabs",
+"Bảng giá hải sản – Ốc · Sò · Bào ngư":"Seafood prices – Snails · Clams · Abalone",
+"Gà – Vịt – Chim (1)":"Chicken – Duck – Birds (1)","Gà – Vịt – Chim (2)":"Chicken – Duck – Birds (2)",
+"Bìa menu":"Menu cover","Salad – Gỏi & Súp":"Salads & Soups","Cơm – Mì – Bún & Lẩu":"Rice – Noodles & Hot pot","Đồ uống":"Drinks",
+"Poster Món mới hôm nay":"Today's new dishes poster","Xem poster Món mới hôm nay":"View today's new dishes poster",
+"Bảng giá hải sản 01 – Tôm · Cua · Ghẹ":"Seafood price list 01 – Prawns · Crabs","Bảng giá hải sản 02 – Ốc · Sò · Bào ngư":"Seafood price list 02 – Snails · Clams · Abalone",
+"Xem bảng giá hải sản trang 1: Tôm, Cua, Ghẹ":"View seafood price list page 1: Prawns, Crabs","Xem bảng giá hải sản trang 2: Ốc, Sò, Mực, Bào ngư":"View seafood price list page 2: Snails, Clams, Squid, Abalone",
+"/Con":"/pc","/con":"/pc"
+});
+Object.assign(ZH,{
+"Công ty TNHH":"VSIP餐厅","Nhà hàng Karaoke VSIP":"卡拉OK有限公司",
+"Nhà Hàng Hầm Rượu - Karaoke VSIP":"酒窖餐厅 – VSIP卡拉OK",
+"4/8F Bùi Hữu Nghĩa, Khu Phố Bình Đức 2, Phường Bình Hoà, TP HCM, Bình Dương, Hồ Chí Minh":"胡志明市平和坊平德二街区裴有义路4/8F",
+"PHÒNG VIP":"VIP包厢","Phòng ăn riêng":"私人包厢","Bàn tròn":"圆桌","Bàn dài":"长桌",
+"5 phòng riêng · bàn tròn mâm xoay":"5间私人包厢 · 转盘圆桌",
+"3 phòng · Phòng bàn dài – hợp tiếp khách, liên hoan công ty":"3间 · 长桌包厢 – 适合商务宴请、公司聚会",
+"Chuyên tiếp khách Trung Quốc":"适合接待中国客人","Thưởng vang, tiếp đối tác":"品酒、接待合作伙伴",
+"Chuyên tiếp khách VIP":"适合接待VIP贵宾","Tiệc gia đình ấm cúng":"温馨家庭聚餐","Sinh nhật, kỷ niệm":"生日、纪念日",
+"Tiếp đối tác doanh nghiệp":"商务伙伴宴请","Liên hoan, họp mặt công ty":"公司聚会、聚餐","Tiếp khách quan trọng":"接待重要客人",
+"Nhận tiệc":"承办宴会","2 sảnh lớn · sinh nhật, cưới hỏi, tất niên":"2个大厅 · 生日宴、婚宴、年终宴",
+"SẢNH TIỆC":"宴会厅","THỰC ĐƠN":"菜单",
+"Sảnh có màn hình LED lớn – hợp tiệc sinh nhật, hội nghị, liên hoan công ty":"配有大型LED屏幕的大厅 – 适合生日宴、会议、公司聚会",
+"Sảnh dài sang trọng, đèn chùm pha lê – hợp tiệc cưới hỏi, tất niên, tiệc đông người":"豪华长厅，水晶吊灯 – 适合婚宴、年终宴及大型宴会",
+"Ảnh không gian bàn dài":"长桌包厢照片","Trang trước":"上一页","Trang sau":"下一页",
+"Sườn cừu nướng đá":"石板烤羊排","Gan ngỗng Pháp áp chảo":"香煎法国鹅肝",
+"Chân gà Đông Tảo hầm thảo mộc":"药膳炖东涛鸡脚","Sò điệp Nhật đút lò phô mai":"芝士焗日本扇贝",
+"Cá tra dầu nhúng mẻ – Lườn bụng":"酸米汤涮巨鲶鱼 – 鱼腩","Cá tra dầu nhúng mẻ – Phần thịt":"酸米汤涮巨鲶鱼 – 鱼肉",
+"Tôm tích cồ":"大号皮皮虾","Cua thịt · Ghẹ xanh":"肉蟹 · 蓝花蟹","Ốc hương":"花螺","Bào ngư Hàn Quốc":"韩国鲍鱼",
+"Hải sản tươi sống & Món hàu":"鲜活海鲜 & 生蚝","Bảng giá hải sản – Tôm · Cua · Ghẹ":"海鲜价目表 – 虾 · 蟹",
+"Bảng giá hải sản – Ốc · Sò · Bào ngư":"海鲜价目表 – 螺 · 贝 · 鲍鱼",
+"Gà – Vịt – Chim (1)":"鸡 – 鸭 – 鸟类 (1)","Gà – Vịt – Chim (2)":"鸡 – 鸭 – 鸟类 (2)",
+"Bìa menu":"菜单封面","Salad – Gỏi & Súp":"沙拉 & 汤","Cơm – Mì – Bún & Lẩu":"米饭 – 面 – 米粉 & 火锅","Đồ uống":"饮料",
+"Poster Món mới hôm nay":"今日新品海报","Xem poster Món mới hôm nay":"查看今日新品海报",
+"Bảng giá hải sản 01 – Tôm · Cua · Ghẹ":"海鲜价目表 01 – 虾 · 蟹","Bảng giá hải sản 02 – Ốc · Sò · Bào ngư":"海鲜价目表 02 – 螺 · 贝 · 鲍鱼",
+"Xem bảng giá hải sản trang 1: Tôm, Cua, Ghẹ":"查看海鲜价目表第1页：虾、蟹","Xem bảng giá hải sản trang 2: Ốc, Sò, Mực, Bào ngư":"查看海鲜价目表第2页：螺、贝、鱿鱼、鲍鱼",
+"/Con":"/只","/con":"/只"
+});
+/* room & hall names (used by the patterns below) */
+const ROOMN={en:{"Phượng Hoàng":"Phoenix","Hương Vang":"Wine Aroma","Dạ Khúc":"Nocturne","Hoàng Hôn":"Sunset","Trăng Vàng":"Golden Moon","Thiên Sơn":"Tian Shan","Thượng Uyển":"Royal Garden","Ngữ Cát":"Ngu Cat","Hoàng Kim":"Golden","Hoàng Gia":"Royal"},
+ zh:{"Phượng Hoàng":"凤凰","Hương Vang":"酒香","Dạ Khúc":"夜曲","Hoàng Hôn":"黄昏","Trăng Vàng":"金月","Thiên Sơn":"天山","Thượng Uyển":"上苑","Ngữ Cát":"语吉","Hoàng Kim":"黄金","Hoàng Gia":"皇家"}};
+for(const l of ["en","zh"])for(const [k,v] of Object.entries(ROOMN[l]))DICT[l][k]=v;
+const RSUF={en:{"Bàn tròn":"Round table","bàn tiệc":"banquet tables","toàn cảnh":"overview"},zh:{"Bàn tròn":"圆桌","bàn tiệc":"宴会桌","toàn cảnh":"全景"}};
+const ROOMRE=new RegExp("^(Cửa phòng|[Pp]hòng|[Ss]ảnh) ("+Object.keys(ROOMN.en).join("|")+")( · .+)?$");
+function roomTr(s,l){const m=s.match(/^(Cửa phòng|[Pp]hòng|[Ss]ảnh) (.+?)(?: · (.+))?$/);if(!m)return null;const n=ROOMN[l][m[2]];if(!n)return null;
+  const kind=m[1].toLowerCase();const suf=m[3]?(RSUF[l][m[3]]||m[3]):"";
+  const base=l==="en"?(kind==="sảnh"?`${n} Hall`:kind==="cửa phòng"?`${n} Room – entrance`:`${n} Room`):(kind==="sảnh"?`${n}宴会厅`:kind==="cửa phòng"?`${n}包厢门口`:`${n}包厢`);
+  return suf?`${base} · ${suf}`:base}
+/* cooking options, translated token by token */
+const OPT={en:{"quay da giòn":"crispy roast","hấp giả chồn":"steamed civet-style","lòng dồi":"offal & sausage","xáo măng":"bamboo shoot stew","xôi":"sticky rice",
+ "Lẩu Tứ Xuyên":"Sichuan hot pot","Hấp Lá Chanh":"Steamed with lime leaves","Nổ Muối Hột":"Rock-salt roasted","Hấp Mắm Nhĩ":"Steamed with fish sauce","Tiềm Ớt Hiểm":"Braised with bird's-eye chili",
+ "Nướng Muối Ớt":"Grilled with salt & chili","Nấu Cháo":"Porridge","Lòng Xào Mướp":"Offal stir-fried with luffa","Tiết Canh":"Blood pudding","Hấp Gừng":"Steamed with ginger","Xào Măng":"Stir-fried with bamboo shoots",
+ "Nấu Chao":"Stewed in fermented tofu","Giả Cầy":"Civet-style stew","Nướng Chao":"Grilled with fermented tofu","Nấu Khoai Sọ":"Stewed with taro","Xôi Bồ Câu":"Pigeon sticky rice","Rô Ti":"Roasted","Tiềm Thuốc Bắc":"Braised with Chinese herbs",
+ "Quay Chảo":"Pan-roasted","Hấp HK":"HK-style steamed","Ăn Sống":"Raw","Nấu Ngọt":"Clear soup","Chưng Tương":"Steamed with soybean sauce","Hấp Lá Chúc":"Steamed with kaffir lime leaves","Nấu Thái":"Thai-style soup",
+ "Nướng Hoàng Bào":"Golden grilled","Om Dưa":"Braised with pickled greens","Nấu Riêu":"Tomato & dill soup","Nấu Ngót":"Light sour soup","Nướng Lá Chuối":"Grilled in banana leaf","Nấu Măng":"Bamboo shoot soup",
+ "Nấu Quế":"Cinnamon stew","Kho Tộ":"Clay-pot braised","Nấu Canh Chua":"Sour soup","Lúc Lắc Hạt Điều":"Shaking-style with cashews","Hầm Sả":"Braised with lemongrass","Nhúng Mẻ":"Sour rice broth hot pot",
+ "Nấu Chuối Đậu":"Stewed with green banana & tofu","Sashimi":"Sashimi","Chiên Giòn":"Deep-fried","Nướng Giấy Bạc":"Foil-grilled","Hấp Hong Kong":"Hong Kong-style steamed","Hấp":"Steamed","Nướng Mọi":"Charcoal-grilled",
+ "Tái Thái":"Thai-style rare","Sốt Cherry":"Cherry sauce","Cháy Tỏi":"Garlic-fried","Nướng":"Grilled","Hoàng Kim":"Golden salted egg","Cà Ri":"Curry","Đút Lò Phô Mai":"Baked with cheese","Nấu Bầu":"Gourd soup",
+ "Rang Muối Hong Kong":"HK-style salt-roasted","Cháy Bơ Tỏi":"Garlic-butter fried","Chiên Nước Mắm":"Fried with fish sauce","Nướng Bum":"Grilled","Nhúng Nước Dừa Tại Bàn":"Coconut-water hot pot at the table",
+ "Hấp Hành Gừng":"Steamed with scallion & ginger","Hấp Thái":"Thai-style steamed","Hấp Sả Chanh":"Steamed with lemongrass & lime","Hấp Nước Dừa":"Steamed in coconut water","Rang Me":"Tamarind-roasted",
+ "Nướng Mỡ Hành":"Grilled with scallion oil","Sốt Rượu Vang":"Wine sauce","Xào Lá Quế":"Stir-fried with basil","5 món":"5 dishes"},
+ zh:{"quay da giòn":"脆皮烤","hấp giả chồn":"仿香猫肉蒸","lòng dồi":"杂碎香肠","xáo măng":"竹笋炖","xôi":"糯米饭",
+ "Lẩu Tứ Xuyên":"四川火锅","Hấp Lá Chanh":"青柠叶蒸","Nổ Muối Hột":"盐焗","Hấp Mắm Nhĩ":"鱼露蒸","Tiềm Ớt Hiểm":"辣椒焖","Nướng Muối Ớt":"椒盐烤","Nấu Cháo":"煮粥","Lòng Xào Mướp":"丝瓜炒杂碎",
+ "Tiết Canh":"血汤","Hấp Gừng":"姜蒸","Xào Măng":"竹笋炒","Nấu Chao":"腐乳焖","Giả Cầy":"仿狗肉焖","Nướng Chao":"腐乳烤","Nấu Khoai Sọ":"芋头焖","Xôi Bồ Câu":"鸽子糯米饭","Rô Ti":"烤","Tiềm Thuốc Bắc":"药材焖",
+ "Quay Chảo":"锅烤","Hấp HK":"港式蒸","Ăn Sống":"生吃","Nấu Ngọt":"清汤","Chưng Tương":"豆酱蒸","Hấp Lá Chúc":"柠檬叶蒸","Nấu Thái":"泰式汤","Nướng Hoàng Bào":"黄袍烤","Om Dưa":"酸菜焖","Nấu Riêu":"番茄莳萝汤",
+ "Nấu Ngót":"清酸汤","Nướng Lá Chuối":"蕉叶烤","Nấu Măng":"竹笋汤","Nấu Quế":"肉桂炖","Kho Tộ":"瓦罐焖","Nấu Canh Chua":"酸汤","Lúc Lắc Hạt Điều":"腰果爆炒","Hầm Sả":"香茅炖","Nhúng Mẻ":"酸米汤涮",
+ "Nấu Chuối Đậu":"青蕉豆腐炖","Sashimi":"刺身","Chiên Giòn":"油炸","Nướng Giấy Bạc":"锡纸烤","Hấp Hong Kong":"港式清蒸","Hấp":"清蒸","Nướng Mọi":"炭烤","Tái Thái":"泰式生拌","Sốt Cherry":"樱桃酱",
+ "Cháy Tỏi":"蒜香炒","Nướng":"烤","Hoàng Kim":"金沙","Cà Ri":"咖喱","Đút Lò Phô Mai":"芝士焗","Nấu Bầu":"葫芦瓜汤","Rang Muối Hong Kong":"港式椒盐","Cháy Bơ Tỏi":"蒜香黄油炒","Chiên Nước Mắm":"鱼露炸",
+ "Nướng Bum":"烤屁股","Nhúng Nước Dừa Tại Bàn":"桌边椰子水涮","Hấp Hành Gừng":"葱姜蒸","Hấp Thái":"泰式清蒸","Hấp Sả Chanh":"柠檬草蒸","Hấp Nước Dừa":"椰子水蒸","Rang Me":"罗望子炒","Nướng Mỡ Hành":"葱油烤",
+ "Sốt Rượu Vang":"红酒汁","Xào Lá Quế":"罗勒叶炒","5 món":"5道菜"}};
+function optTr(s,l){const parts=s.split(/(\s*[\/,:]\s*)/);let hit=0;const out=parts.map((p,i)=>{if(i%2)return p;const t=p.trim();if(!t)return p;const v=OPT[l][t];if(v){hit++;return v}return null});
+  if(!hit||out.includes(null))return null;return out.join("")}
+/* sizes inside dish descriptions */
+function sizeTr(r,l){if(r==="đặt trước")return l==="en"?"pre-order":"需预订";
+  let x=r.replace(/^trên (.+)$/,l==="en"?"over $1":"$1以上").replace(/^dưới (.+)$/,l==="en"?"under $1":"$1以下");
+  return x.replace(/con\/kg/,l==="en"?"pcs/kg":"只/公斤").replace(/kg\/con/,l==="en"?"kg/pc":"公斤/只")}
+/* dish names: EN title = English name, italic line = Vietnamese name; ZH title = Chinese name */
+const ZHD={1:"香煎鳕鱼",2:"三文鱼刺身",3:"鱼露海蜇",4:"VSIP春卷",5:"香煎牛肉面",6:"海胆酱配爽脆沙拉和烤面包",7:"鸽子糯米饭",8:"VSIP牛肉沙拉",9:"石板烤美式肋眼牛排 / 胡椒酱",10:"石板烤澳洲北段牛肉 / 胡椒酱",11:"烤全猪",
+12:"炸薯条",13:"炸芋头",14:"下龙鱿鱼饼",15:"香脆炸豆腐 / 香茅炸豆腐 / 洋葱炸豆腐",16:"三层豆腐",17:"四川豆腐",18:"禾虫饼",19:"莳萝炸鱼饼",20:"锡纸包豆腐",21:"酸辣蒜蓉牛肉",22:"鱼露 / 辣椒 / 烤鱿鱼干",23:"竹筒饭 - 菠萝干",24:"鲶鱼干",
+25:"牛肉鸡蛋沙拉",26:"皇帝沙拉",27:"油醋沙拉",28:"牛肉飞鱼籽沙拉",29:"芦笋蒸鸭胸沙拉",30:"芒果干芋头沙拉",31:"芒果干黑鱼沙拉",32:"莲藕虾肉沙拉",33:"椰心虾肉沙拉",34:"牛肉什锦蔬菜沙拉",35:"芋头烤鱿鱼沙拉",
+36:"海鲜汤 / 蟹汤 / 三季蘑菇汤",37:"雪鲍汤",38:"鲍鱼汤 / 海参汤 / 鱼翅汤 / 燕窝汤 / 鱼鳔汤",
+39:"川味鲤鱼火锅",40:"广东清蒸石斑鱼",41:"红烧鸡",42:"宫保鸡丁",43:"艾草红烧乳鸽",44:"港式咸虾",45:"中式麻辣火锅",46:"中式炒牛肉",47:"豆豉炒牛肉",48:"四川豆腐",49:"广东豆腐",50:"香煎牛肉面",
+51:"炒牛肉",52:"青椒炒牛肉",53:"青椒牛肉",54:"芦笋牛腩",55:"金针菇牛腩",56:"盐烤牛肉",57:"蒜蓉牛肩肉",
+58:"椒盐烤猪肋排",59:"芋头烤猪肋排",60:"蒜蓉炸猪肋排",61:"美式烧烤猪肋排",62:"脆皮五花肉",63:"姜米酱烤五花肉",64:"豆酱 / 椒盐烤野猪乳房",65:"蒜蓉炸五花肉",66:"椒盐烤五花肉",67:"脆皮炸咸猪腿",
+68:"中原山鸡（两道菜）",69:"黑鸡（两道菜）",70:"走地鸡",71:"番鸭（三道菜）",72:"野鸭（两道菜）",73:"鸽子",
+74:"黑石斑鱼（普通）",75:"黑石斑鱼（中号）",76:"青星斑",77:"红星斑（小）",78:"红星斑（大）",79:"白鲳鱼",80:"鲤鱼",81:"鲟鱼",82:"黑鮠鱼",83:"溪鮠鱼",84:"脆肉鲤鱼",85:"溪鳗",86:"花鳗（中）",87:"花鳗（大）",
+88:"韩国比目鱼",89:"红泥鳅鱼",90:"泥鳅鱼（小）",91:"韩国白比目鱼",92:"笋壳鱼",93:"玉帝鱼",
+94:"海捕斑节虾",95:"斑节虾",96:"罗氏沼虾（中）",97:"罗氏沼虾（大）",98:"罗氏沼虾",99:"锦绣龙虾（特大）",100:"锦绣龙虾（中）",101:"锦绣龙虾（小）",102:"青龙虾（小）",103:"美国刺龙虾",104:"西澳龙虾（小）",105:"西澳龙虾（中）",106:"西澳龙虾（特大）",107:"东澳龙虾",
+108:"阿拉斯加帝王蟹（中）",109:"阿拉斯加帝王蟹（特大）",110:"皮皮虾（小）",111:"皮皮虾（中）",112:"红琵琶虾",
+113:"鱿鱼",114:"叶鱿鱼",115:"闪光鱿鱼",116:"籽鱿鱼",
+117:"池中鲜活海鲜",118:"芝士烤生蚝 / 生蚝粥",119:"生蚝 / 葱油烤生蚝",120:"葱油烤海虫",121:"刺身",
+122:"水煮秋葵 / 葫芦瓜、苦瓜 / 空心菜 / 红薯叶",123:"蒜蓉炒空心菜 / 红薯叶",124:"蒜蓉炒西兰花 / 西葫芦芽 / 野菜",125:"牛肉炒西兰花 / 空心菜 / 红薯叶 / 西葫芦芽",126:"香菇炒白菜，苦瓜炒肉丝 / 鸡蛋炒苦瓜",127:"蒜蓉炒芦笋",128:"牛肉炒芦笋",129:"什锦水煮蔬菜",130:"蘸酱红烧肉",
+131:"蒜蓉 / 蛋炒饭",132:"咸鱼 / 扬州炒饭",133:"海鲜炒饭",134:"海鲜 / 牛肉炒面",135:"新加坡炒面",136:"海鲜 / 牛肉炒米粉",137:"新加坡炒米粉",138:"蟹钳炒米粉",
+139:"泰式火锅 / 海鲜蘑菇 / 海鲜淡水蟹 / 淡水蟹牛肉",140:"牛驼峰蘸辣椒酱",141:"苦瓜黑鱼火锅"};
+try{const D=window.__vsipDishes||[];
+  for(const x of D){const parts=(x.desc||"").split(" · "),en0=parts[0],rest=parts.slice(1);
+    const restEn=rest.map(r=>sizeTr(r,"en")),restZh=rest.map(r=>sizeTr(r,"zh"));
+    if(en0)EN[x.name]=en0;
+    if(ZHD[x.id])ZH[x.name]=ZHD[x.id];
+    if(x.desc){EN[x.desc]=[x.name,...restEn].join(" · ");ZH[x.desc]=[en0,...restZh].join(" · ")}
+  }}catch(e){}
+PAT.en.unshift(
+ [/^Xem ảnh (.+)$/,(m,a)=>`View photo: ${roomTr(a,"en")??(/^không gian bàn dài \d+$/.test(a)?a.replace(/^không gian bàn dài (\d+)$/,"long-table room $1"):(tr(a)??a))}`],
+ [ROOMRE,(m)=>roomTr(m,"en")??m],
+ [/^Không gian bàn dài ảnh (\d+)$/,(m,n)=>`Long-table room photo ${n}`],
+ [/^(\d+) ảnh$/,(m,n)=>`${n} photos`],
+ [/^Xem trang (\d+): (.+)$/,(m,n,a)=>`View page ${n}: ${tr(a)??a}`],
+ [/^Nhắn Zalo (.+)$/,(m,a)=>`Message on Zalo ${a}`],
+ [/^([\d.]+đ)\/con$/,(m,a)=>`${a}/pc`]
+);
+PAT.zh.unshift(
+ [/^Xem ảnh (.+)$/,(m,a)=>`查看图片：${roomTr(a,"zh")??(/^không gian bàn dài \d+$/.test(a)?a.replace(/^không gian bàn dài (\d+)$/,"长桌包厢$1"):(tr(a)??a))}`],
+ [ROOMRE,(m)=>roomTr(m,"zh")??m],
+ [/^Không gian bàn dài ảnh (\d+)$/,(m,n)=>`长桌包厢照片${n}`],
+ [/^(\d+) ảnh$/,(m,n)=>`${n}张照片`],
+ [/^Xem trang (\d+): (.+)$/,(m,n,a)=>`查看第${n}页：${tr(a)??a}`],
+ [/^Nhắn Zalo (.+)$/,(m,a)=>`Zalo联系 ${a}`],
+ [/^([\d.]+đ)\/con$/,(m,a)=>`${a}/只`]
+);
+/* cooking-option lines: last resort, only when every token is known */
+PAT.en.push([/^.+$/,(m)=>optTr(m,"en")??m]);
+PAT.zh.push([/^.+$/,(m)=>optTr(m,"zh")??m]);
+
 function tr(s){const D=DICT[lang];if(!D)return null;if(D[s]!=null)return D[s];for(const [re,f] of PAT[lang]){if(re.test(s))return s.replace(re,f)}return null}
 const ROOTS="#mNav,#siteTop,#view-site,#view-restaurant,#view-karaoke,#siteFoot,#siteFloat,.callsheet,.kcallbar,.lb";
 const ATTRS=["aria-label","alt","title","placeholder","data-tip"];
