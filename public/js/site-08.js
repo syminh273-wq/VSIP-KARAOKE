@@ -182,7 +182,7 @@ const PAT={en:[
 
 /* ===== i18n additions: rooms & halls, hero, address, dish names (generated), cooking options, labels ===== */
 Object.assign(EN,{
-"Công ty TNHH":"VSIP Restaurant","Nhà hàng Karaoke VSIP":"& Karaoke Co., Ltd.",
+"Công ty TNHH":"VSIP Restaurant & Karaoke","Nhà hàng Karaoke VSIP":"Company Limited",
 "Nhà Hàng Hầm Rượu - Karaoke VSIP":"Wine Cellar Restaurant – VSIP Karaoke",
 "4/8F Bùi Hữu Nghĩa, Khu Phố Bình Đức 2, Phường Bình Hoà, TP HCM, Bình Dương, Hồ Chí Minh":"4/8F Bui Huu Nghia St., Binh Duc 2 Quarter, Binh Hoa Ward, Ho Chi Minh City",
 "PHÒNG VIP":"VIP ROOMS","Phòng ăn riêng":"Private dining rooms","Bàn tròn":"Round tables","Bàn dài":"Long tables",
@@ -210,7 +210,7 @@ Object.assign(EN,{
 "/Con":"/pc","/con":"/pc"
 });
 Object.assign(ZH,{
-"Công ty TNHH":"VSIP餐厅","Nhà hàng Karaoke VSIP":"卡拉OK有限公司",
+"Công ty TNHH":"VSIP餐厅卡拉OK","Nhà hàng Karaoke VSIP":"有限公司",
 "Nhà Hàng Hầm Rượu - Karaoke VSIP":"酒窖餐厅 – VSIP卡拉OK",
 "4/8F Bùi Hữu Nghĩa, Khu Phố Bình Đức 2, Phường Bình Hoà, TP HCM, Bình Dương, Hồ Chí Minh":"胡志明市平和坊平德二街区裴有义路4/8F",
 "PHÒNG VIP":"VIP包厢","Phòng ăn riêng":"私人包厢","Bàn tròn":"圆桌","Bàn dài":"长桌",
