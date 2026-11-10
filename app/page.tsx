@@ -3,10 +3,11 @@ import path from "node:path";
 import SiteScripts from "@/components/SiteScripts";
 
 // The page markup lives in app/markup.html (edit text/prices/links there).
-// It is read at build time and rendered as static HTML.
-const markup = fs.readFileSync(path.join(process.cwd(), "app", "markup.html"), "utf8");
+// It is read at build time and rendered as static HTML (re-read on every request in `npm run dev`).
+const readMarkup = () => fs.readFileSync(path.join(process.cwd(), "app", "markup.html"), "utf8");
 
 export default function Home() {
+  const markup = readMarkup();
   return (
     <>
       <div id="vsip-root" style={{ display: "contents" }} dangerouslySetInnerHTML={{ __html: markup }} />

@@ -1217,10 +1217,13 @@ body{font-family:var(--f-land);font-size:16px;line-height:1.6}
   .section-head{margin-bottom:26px}
   .section-head p{font-size:15.5px}
   /* category chips: one scrollable row instead of a tall block */
-  .rtabs{flex-wrap:nowrap;justify-content:flex-start;overflow-x:auto;margin:0 -16px 22px;padding:2px 16px 8px;scroll-snap-type:x proximity;scrollbar-width:none}
+  .rtabs{flex-wrap:nowrap;justify-content:flex-start;overflow-x:auto;margin:0 0 22px;padding:2px 0 8px;scroll-snap-type:x proximity;scroll-padding-inline:0;scrollbar-width:none}
   .rtabs::-webkit-scrollbar{display:none}
   .rtab{flex:none;scroll-snap-align:start;min-height:40px}
   .chips-l,.menu-tabs{flex-wrap:nowrap;justify-content:flex-start;overflow-x:auto;padding-bottom:6px;scrollbar-width:none}
+  /* center the Món ăn / Lẩu tabs; auto margins keep it scrollable if it ever overflows */
+  .menu-tabs>:first-child{margin-left:auto}
+  .menu-tabs>:last-child{margin-right:auto}
   .tab{flex:none}
   /* footer links: bigger tap targets */
   .foot-links{gap:2px}
@@ -1385,3 +1388,32 @@ h1,h2,h3,h4,.hs-h,.mb-sub h3,.sec-title h3{text-wrap:balance}
 }
 @media(min-width:901px){.hs .bb-loc span{max-width:46ch}}
 @media(min-width:561px) and (max-width:900px){.hs-ph{aspect-ratio:16/10}#homeSlider .hs-bar{top:calc(62.5vw + 12px)}}
+
+/* mobile hero banners: <picture> swaps in img/hs-*-m.jpg at ≤760px; keep layout identical */
+.hs-ph picture{display:contents}
+@media(max-width:760px){.hs-ph img{object-position:50% 50%;transform-origin:50% 50%}}
+
+/* ===== mobile header menu (☰) ===== */
+.mmenu-btn,.mmenu{display:none}
+@media(max-width:760px){
+  .mmenu-btn{order:99;display:grid;place-items:center;flex:none;width:42px;height:42px;margin-left:8px;padding:0;border:1px solid var(--l-line);border-radius:12px;background:#fff;color:var(--cream);cursor:pointer}
+  .mmenu-btn .ms{font-size:26px}
+  .mmenu-btn[aria-expanded="true"]{border-color:var(--gold);color:var(--gold)}
+  .mmenu-btn:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+  .mmenu{position:absolute;left:0;right:0;top:100%;display:grid;gap:4px;padding:8px max(16px,env(safe-area-inset-right,0px)) 14px max(16px,env(safe-area-inset-left,0px));background:#fff;border-bottom:1px solid var(--l-line);box-shadow:0 16px 30px #5a3d0a24}
+  .mmenu a{display:flex;align-items:center;gap:12px;min-height:48px;padding:0 12px;border-radius:12px;font:600 16px/1.2 var(--f-land);color:var(--cream)}
+  .mmenu a .ms{font-size:22px;color:var(--gold)}
+  .mmenu a .nav-ic{width:22px;height:22px;flex:none;color:var(--gold)}
+  .mmenu a[aria-current="page"]{background:var(--l-band);color:var(--gold)}
+  .mmenu a:focus-visible{outline:2px solid var(--gold);outline-offset:-2px}
+}
+
+/* Vietnamese dish description (under the English name); Vietnamese mode only */
+.dish p.dvi,.menu-card p.dvi{margin-top:4px;color:var(--cream);font-size:13.5px;line-height:1.5}
+.prow .dvi{grid-column:1/-1;font-size:13px;color:var(--cream);line-height:1.5}
+html:not([lang="vi"]) .dvi{display:none}
+
+/* Vietnamese stacked diacritics (Ẩ Ầ Ấ Ặ…) rise above the line box; gradient text (background-clip:text)
+   only paints inside the box, so extend the paint area up/down without moving the layout. */
+.hs-h{line-height:1.2!important}
+.hs-h .l2,.bh2 h1 .l2{padding-top:.25em;margin-top:-.25em;padding-bottom:.12em;margin-bottom:-.12em}

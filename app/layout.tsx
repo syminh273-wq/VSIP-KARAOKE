@@ -2,7 +2,7 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Nhà Hàng Hầm Rượu & Karaoke VSIP",
+  title: "CÔNG TY TNHH NHÀ HÀNG KARAOKE VSIP",
   description:
     "Nhà hàng món Việt – món Trung – hải sản tươi sống và karaoke phòng LED 3D tại VSIP I, Thuận An. Nhận tiệc sinh nhật, liên hoan công ty, tiếp khách.",
   icons: { icon: "/img/logo-v3.png" },
